@@ -21,5 +21,11 @@
             Console.SetCursorPosition(col, row);
             Console.Write(line);
         }
+
+        public void MoveCursor()
+        {
+            var maxRow = _linesWritten.Max();
+            Console.CursorTop = maxRow + 1;
+        }
     }
 }

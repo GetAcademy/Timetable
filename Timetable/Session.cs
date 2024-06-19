@@ -14,5 +14,10 @@
             Start = new TimeOnly(startHour, startMinute);
             End = new TimeOnly(endHour, endMinute);
         }
+
+        public override string ToString()
+        {
+            return Start.ToString("HH:mm") + " - " + End.ToString("HH:mm") + " " + Name;
+        }
     }
 }
