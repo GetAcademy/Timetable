@@ -13,7 +13,7 @@
             _linesWritten = new int[colCount];
         }
 
-        public void WriteLine(string line, int colIndex)
+        public void Write(string line, int colIndex)
         {
             var col = colIndex * _colWidth;
             var row = _startRow + _linesWritten[colIndex];
